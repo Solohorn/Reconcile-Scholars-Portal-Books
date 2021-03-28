@@ -26,8 +26,8 @@ In practice, there are a few issues that cause problems:
 For missing titles, there may or may not be portfolios or bib records in the CZ. When there are, this script can help uncover entire collections that might be activated. In the absence of CZ portfolios for a given set of titles, or for those who chose not to activate portfolios from the CZ, getting the missing titles into Alma can be another challenge. Loading MARC records through an import profile can result in unnecessary duplication of bibliographic records. Attempts to load local portfolios can produce variable results when there are duplicate bibliographic records. A second script can add local portfolios to an electronic collection when they meet criteria that can be evaluated by an API call (for example, when they are present in an existing collection).
 
 To do:
--- Generalize the script so that it can be used with many different institutions and vendors.
--- Alter the script to use a configuration file, so that institution and vendor-specific parameters can be set.
--- Review the URL path normalization routines, to see whether they can be simplified and configurable on a per-vendor basis.
--- Allow choice of MARC and MARCXML records.
--- Allow choice of UTF-8 or Ansel encoding for MARC records.
+1) Generalize the script so that it can be used with many different institutions and vendors.
+2) Alter the script to use a configuration file, so that institution and vendor-specific parameters can be set.
+3) Review the URL path normalization routines, to see whether they can be simplified and configurable on a per-vendor basis.
+4) Allow choice of MARC and MARCXML records.
+5) Allow choice of UTF-8 or Ansel encoding for MARC records.
