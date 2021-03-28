@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+    <leader>01241cam  2200337 a 4500</leader>
+    <controlfield tag="001">cis5289941</controlfield>
+    <controlfield tag="003">UkOxU</controlfield>
+    <controlfield tag="005">20031127112137.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr zn    |</controlfield>
+    <controlfield tag="008">030423s2003    enk     sb    001 0 eng d</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">  2003051525</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">9786610421718</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="z">0521830257 (Cloth)</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">042171</subfield>
+      <subfield code="b">MIL</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">UK-RwCLS</subfield>
+      <subfield code="c">UK-RwCLS</subfield>
+    </datafield>
+    <datafield tag="050" ind1="1" ind2="4">
+      <subfield code="a">ML3795</subfield>
+      <subfield code="b">.D3428 2003eb</subfield>
+    </datafield>
+    <datafield tag="082" ind1="0" ind2="4">
+      <subfield code="a">780/.1</subfield>
+      <subfield code="2">21</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">DeNora, Tia,</subfield>
+      <subfield code="d">1958-</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">After Adorno</subfield>
+      <subfield code="h">[electronic resource] :</subfield>
+      <subfield code="b">rethinking music sociology /</subfield>
+      <subfield code="c">Tia DeNora.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Cambridge :</subfield>
+      <subfield code="b">Cambridge University Press,</subfield>
+      <subfield code="c">2003.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">xv, 176 p ;</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Title from e-book title screen (viewed October 15, 2007).</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references (p.   ) and index.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Music</subfield>
+      <subfield code="x">Social aspects.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Music</subfield>
+      <subfield code="x">Philosophy and aesthetics.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Electronic books.</subfield>
+      <subfield code="2">local</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Adorno, Theodor W.,</subfield>
+      <subfield code="d">1903-1969.</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2=" ">
+      <subfield code="3">Scholars Portal Books</subfield>
+      <subfield code="u">http://books.scholarsportal.info/viewdoc.html?id=/ebooks/ebooks2/cambridge/2010-04-12/1/0511205736</subfield>
+    </datafield>
+  </record>
+<record>
+    <leader>01452cam  2200373 a 4500</leader>
+    <controlfield tag="001">cis5824273</controlfield>
+    <controlfield tag="003">IeDuTC</controlfield>
+    <controlfield tag="005">20060327152152.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr zn    |</controlfield>
+    <controlfield tag="008">050808s2004    enkg    sb    001 0 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">  2005280593</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">GBA452440</subfield>
+      <subfield code="2">bnb</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">012954583</subfield>
+      <subfield code="2">Uk</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">9786610749959</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="z">0521823544 (Cloth)</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="z">0511265204 (electronic bk.)</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">074995</subfield>
+      <subfield code="b">MIL</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">UK-RwCLS</subfield>
+      <subfield code="c">UK-RwCLS</subfield>
+    </datafield>
+    <datafield tag="050" ind1="1" ind2="4">
+      <subfield code="a">ML410.B88</subfield>
+      <subfield code="b">H67 2004eb</subfield>
+    </datafield>
+    <datafield tag="082" ind1="0" ind2="4">
+      <subfield code="a">780.92</subfield>
+      <subfield code="2">22</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Horton, Julian.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Bruckner's symphonies</subfield>
+      <subfield code="h">[electronic resource] :</subfield>
+      <subfield code="b">analysis, reception, and cultural politics /</subfield>
+      <subfield code="c">Julian Horton.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Cambridge :</subfield>
+      <subfield code="b">Cambridge University Press,</subfield>
+      <subfield code="c">2004.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">x, 280 p. :</subfield>
+      <subfield code="b">music ;</subfield>
+      <subfield code="c">26 cm.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Title from e-book title screen (viewed October 15, 2007).</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references (p. [266]-276) and index.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="4">
+      <subfield code="a">Bruckner, Anton,</subfield>
+      <subfield code="d">1824-1896</subfield>
+      <subfield code="x">Criticism and interpretation.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="0">
+      <subfield code="a">Bruckner, Anton,</subfield>
+      <subfield code="d">1824-1896</subfield>
+      <subfield code="x">Criticism and interpretation.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Symphonies</subfield>
+      <subfield code="x">Analysis, appreciation.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Electronic books.</subfield>
+      <subfield code="2">local</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2=" ">
+      <subfield code="3">Scholars Portal Books</subfield>
+      <subfield code="u">http://journals.scholarsportal.info/viewdoc.html?id=/ebooks/ebooks2/cambridge/2010-04-12/1/0511263651</subfield>
+    </datafield>
+  </record>
+</collection>

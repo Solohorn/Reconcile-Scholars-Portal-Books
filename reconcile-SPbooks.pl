@@ -4,7 +4,7 @@
 #
 # Purpose:  To find out which records are missing from the catalogue and whether we've activated titles to which we're not entitled.
 #
-# Method:   Compares KBART files against list of activated URLs to produce reports and output sets of MARC records.
+# Method:   Compares KBART files against list of activated URLs and MARC records to produce reports and output sets of MARC records.
 #
 # Input: 1) One or more URL export files in CSV format from Alma with three columns: Resource Type,Portfolio ID,URL.
 #        2) One or more entitlement files from Scholars Portal admintool
@@ -50,6 +50,7 @@ use Archive::Zip;
 use MARC::File::USMARC;
 use MARC::Record;
 use MARC::File::XML ( BinaryEncoding => 'utf8', RecordFormat => 'MARC21' );
+use Try::Tiny;
 use vars qw/ %opt /;
 use Getopt::Std;
 
@@ -62,19 +63,17 @@ $| = 1;
 sub usage {
     print STDERR << "EOF";
 
-When the link matches a pattern in the config file, removes the 856, creates a new one with appropriate platform
-link text and adds proxy to collection URL if required.
+Compares KBART files against list of activated URLs and MARC records to produce reports and output sets of MARC records.
 
-usage: $0 [-x] [-d KBART and MARC directory] [-p proxy]
+usage: perl $0 [-x] [-d KBART and MARC directory] [-p proxy]
 
  -d [directory]        : The directory containing KBART and MARC file (optional). Default is the script directory.
  -p [proxy prefix]     : The EZproxy prefix for your institution (optional).
  -x                    : This (help) message.
 
 example:
- $0 -d"file.mrc" -c"config.txt" -v"1"
+perl $0 -d"kbart-marc-dir" -p"http://proxy.lib.trentu.ca/login?url="
 
- Version: $VERSION
 EOF
     exit;
 }
@@ -144,6 +143,8 @@ foreach $filename (@csv_filenames) {
 				} else {
 					print ERRLOG  "URL not formed as expected for Portfolio ID:\t$field[1]\t$url\n";
 				}
+			} else {
+				print ERRLOG  "Skipping line $recCtr: expected 3 fields and found ", scalar(@field), "\n";
 			}
 		} else {
 			my $err = $csv->error_input;
@@ -252,12 +253,13 @@ my @zip_filenames = File::Find::Rule->file()
                                 ->in( $dirname );
 
 FILELOOP3:
-foreach $filename (@zip_filenames) {
+foreach my $filename (@zip_filenames) {
 	print ZIPLOG "$filename\n";
 	my $zip = Archive::Zip->new();
 
 	my $status  = $zip->read($filename);
-	die "Read of $filename failed\n" if $status != 'AZ_OK';
+  print "Status of read for $filename: $status\n";
+	die "Read of $filename failed\n" if $status != '0';
 
 	my $path = $filename;
 	$path =~ s/\.zip$//;
@@ -343,7 +345,7 @@ foreach $filename (@mrc_filenames) {
 					# print BADLINK $record->as_usmarc();
 					$bad_link_file->write( $record );
 					print MRCLOG "BAD LINK:     File: $filename     Record $mrcRecCtr: $title     Link: $url\n";
-				}					
+				}
 			} else {
 				# print NOLINK $record->as_usmarc();
 				$no_link_file->write( $record );
